@@ -1,0 +1,19 @@
+## Configuration
+
+baseURL = "http://example.org/"
+languageCode = "en-us"
+title = "Datadog Test"
+theme = "mytheme"
+relativeURLS = true
+
+
+[menu]
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+
+  [[menu.main]]
+    identifier = "posts"
+    name = "Posts"
+    url = "/posts/"
