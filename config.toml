@@ -5,8 +5,7 @@ languageCode = "en-us"
 title = "Datadog Test"
 theme = "mytheme"
 relativeURLS = true
-
-custom_css = ["css/main.css"]
+scss = ["scss/main.scss"]
 custom_js = ["js/custom.js"]
 
 [menu]
