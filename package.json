@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Nikee-R/website-test/issues"
   },
-  "homepage": "https://github.com/Nikee-R/website-test#readme"
+  "homepage": "https://github.com/Nikee-R/website-test#readme",
+  "dependencies": {
+    "boostrap": "^2.0.0"
+  }
 }

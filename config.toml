@@ -6,6 +6,8 @@ title = "Datadog Test"
 theme = "mytheme"
 relativeURLS = true
 
+custom_css = ["css/main.css"]
+custom_js = ["js/custom.js"]
 
 [menu]
   [[menu.main]]
