@@ -7,35 +7,97 @@
   </div>
 </div>
 
-<div class="container">
-  {{ $recentposts := 5 }}
-  {{ if .Params.recentposts }}
-    {{ $recentposts = .Params.recentposts }}
-  {{ end }}
+<div class="container-fluid">
+  <div class="row d-flex">
+    <div class="container mb-0 mb-md-6">
+      <div class="features">
+         <div class="col-md-4">
+           <div class="text-wrapp">
+             <h1>Modern<br>
+            monitoring &<br>
+            analytics
+          </h1>
 
-  <h2 class="text-center">Recent posts</h2>
+          <h2>See inside any stack, any app, at<br>
+              any scale, anywhere.
+          </h2>
 
-  {{ range first $recentposts (where .Pages "Type" "posts" ) }}
-    <h2 class="mt-5"><a class="text-body" href="{{ .URL | relURL}}">{{ .Title | markdownify}}</a></h2>
-    {{ if .Params.Subtitle }}
-      <h3 class="font-weight-light font-italic mb-3">{{ .Params.Subtitle | markdownify }}</h2>
-    {{ end }}
+        <a class="main-cta" href="#">TRY FREE</a></div>
+            
+         </div>
 
-    <p class="text-muted mt-3">
-      <a class="text-muted" href="{{ .Permalink }}">Published {{ .Date.Format "January 2, 2006"  }}</a>
+         <div class="pricing-container">
+            <div class="pricing-table">
+              <h6 id="infra">INFRASTRUCTURE</h6>
 
-      {{ range .Params.tags }}
-        <a class="text-muted" href="{{ "/tags/" | relURL }}{{ . | urlize }}">#{{ . }}</a>
-      {{ end }}
-    </p>
+              <p class="start">Starting at</p>
 
-    <article class="article">
-      <p>{{ .Summary }}</p>
-    </article>
+              <p class="price">$15</p>
 
-    <p class="text-muted">Reading time: about {{ .ReadingTime }} minutes</p>
-    <p><a class="btn btn-primary" href="{{ .URL | relURL }}">Read more...</a></p>
-  {{ end }}
+              <p class="details">Per host, per month*</p>
 
+              <p class="small">Centralize youir monitoring of<br>
+              systems and services<br></p>
+
+              <ul>
+                <li>- 250+ integrations</li>
+                <li>- Out-of-the-box dashboards</li>
+                <li>- 15-month metric retention</li>
+              </ul>
+
+              <a href="#" class="infra-btn">See Details</a>
+            </div>
+
+            <div class="pricing-table">
+              <h6 id="apm">APM</h6>
+
+              <p class="start">Starting at</p>
+
+              <p class="price">$31</p>
+
+              <p class="details">Per host, per month*</p>
+
+              <p class="small">Centralize youir monitoring of<br>
+              systems and services<br></p>
+
+              <ul>
+                <li>- Java, Ruby, Python, Go<br>
+                  &nbsp;&nbsp;Node, and more</li>
+                <li>- Out-of-the-box application<br>
+                  &nbsp;&nbsp;health dashboards</li>
+                <li>- 1 million trace events per<br>
+                  &nbsp;&nbsp;host included</li>
+              </ul>
+
+              <a href="#" class="apm-btn">See Details</a>
+            </div>
+
+            <div class="pricing-table">
+              <h6 id="logs">Logs Management</h6>
+
+              <p class="start">Starting at</p>
+
+              <p class="price">$1.27</p>
+
+              <p class="details">Per host, per month*</p>
+
+              <p class="small">Analyze and explore log data in<br>
+                  context</p>
+
+              <ul>
+                <li>- Collect from any source</li>
+                <li>- Automated & custom<br>
+                  &nbsp;&nbsp;processing</li>
+                <li>- Fully integrated with<br>
+                  &nbsp;&nbsp;Infrastructure and APM</li>
+              </ul>
+
+              <a href="#" class="logs-btn">See Details</a>
+            </div>
+         </div>
+      </div>
+   </div>
+  </div>
 </div>
+
 {{ end }}

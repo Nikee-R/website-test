@@ -1,8 +1,124 @@
+h1, .h1 {
+  font-family: 'National', Helvetica ,Arial ,sans-serif;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 50px;
+  font-feature-settings: 'pnum' on, 'lnum' on;
+  color: #000000; }
+
+h2, .h2 {
+  font-family: 'National', Helvetica ,Arial ,sans-serif;
+  font-weight: normal;
+  font-size: 24px !important;
+  line-height: 50px;
+  font-feature-settings: 'pnum' on, 'lnum' on;
+  color: #000000; }
+
+/** Feature Section Styling **/
+.features {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
+
+.features .small {
+  font-family: 'National', Helvetica ,Arial ,sans-serif;
+  font-weight: 480;
+  font-size: 14px;
+  line-height: 1.3;
+  color: #000000; }
+
+.features li {
+  font-family: 'National', Helvetica ,Arial ,sans-serif;
+  font-weight: 480;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #000000;
+  list-style: none; }
+
+.features .details {
+  font-family: 'National', Helvetica ,Arial ,sans-serif;
+  font-weight: 480;
+  font-size: 12px;
+  line-height: 17px;
+  color: #000000; }
+
+.features ul {
+  padding: 0; }
+
+.pricing-container {
+  display: flex;
+  flex-direction: row;
+  background: #F5F5F5;
+  padding: 1.5vw;
+  width: 753px;
+  justify-content: space-around; }
+
+#infra {
+  font-family: 'National', Helvetica ,Arial ,sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.342857px;
+  text-transform: uppercase;
+  color: #2B2AA7; }
+
+#apm {
+  font-family: 'National', Helvetica ,Arial ,sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.342857px;
+  text-transform: uppercase;
+  color: #14D071; }
+
+#logs {
+  font-family: 'National', Helvetica ,Arial ,sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.342857px;
+  text-transform: uppercase;
+  color: #FF635A; }
+
+.start {
+  font-family: 'National', Helvetica ,Arial ,sans-serif;
+  font-style: normal;
+  font-weight: 480;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000; }
+
+.price {
+  font-family: 'National', Helvetica ,Arial ,sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 45px;
+  line-height: 50px;
+  font-feature-settings: 'pnum' on, 'lnum' on;
+  color: #000000; }
+
+.features .main-cta {
+  font-family: 'National', Helvetica ,Arial ,sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #724EEF;
+  background-color: transparent;
+  border: 3px solid #724EEF;
+  text-decoration: none;
+  padding: 1vw 2vw; }
+
 /** Footer Styling **/
 footer {
   background: linear-gradient(180deg, #443E48 0%, #110617 100%);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  height: 27vw;
+  height: 22vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -17,7 +133,7 @@ footer button {
   border: 1px solid #979797;
   border-radius: .25vw;
   background-color: transparent;
-  font-family: 'National', 'PT Sans Narrow', sans-serif;
+  font-family: 'National', Helvetica ,Arial ,sans-serif;
   font-weight: bold;
   font-size: 16px;
   line-height: 22px;
@@ -34,7 +150,7 @@ footer button:hover {
   transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out,-webkit-box-shadow .15s ease-in-out; }
 
 footer p {
-  font-family: 'National', 'PT Sans Narrow', sans-serif;
+  font-family: 'National', Helvetica ,Arial ,sans-serif;
   font-weight: 700;
   font-size: 16px;
   color: #B6B6B6;
@@ -42,7 +158,7 @@ footer p {
   margin-bottom: 0; }
 
 footer ul li a, footer ul li a:hover {
-  font-family: 'National', 'PT Sans Narrow', sans-serif;
+  font-family: 'National', Helvetica ,Arial ,sans-serif;
   font-weight: 100;
   font-size: 16px;
   color: #B6B6B6;
@@ -64,7 +180,7 @@ footer ul {
   color: #fff; }
 
 .terms a, .terms a:hover {
-  font-family: 'National', 'PT Sans Narrow', sans-serif;
+  font-family: 'National', Helvetica ,Arial ,sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -121,7 +237,7 @@ footer ul {
   --bs-white-rgb: 255, 255, 255;
   --bs-black-rgb: 0, 0, 0;
   --bs-body-color-rgb: 33, 37, 41;
-  --bs-body-bg-rgb: 242, 242, 242;
+  --bs-body-bg-rgb: 255, 255, 255;
   --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
@@ -130,7 +246,7 @@ footer ul {
   --bs-body-font-weight: 400;
   --bs-body-line-height: 1.5;
   --bs-body-color: #212529;
-  --bs-body-bg: #F2F2F2; }
+  --bs-body-bg: #fff; }
 
 *,
 *::before,
@@ -546,7 +662,7 @@ progress {
 
 .img-thumbnail {
   padding: 0.25rem;
-  background-color: #F2F2F2;
+  background-color: #fff;
   border: 1px solid #dee2e6;
   border-radius: 0.25rem;
   max-width: 100%;
@@ -1601,7 +1717,7 @@ progress {
   font-weight: 400;
   line-height: 1.5;
   color: #212529;
-  background-color: #F2F2F2;
+  background-color: #fff;
   background-clip: padding-box;
   border: 1px solid #ced4da;
   appearance: none;
@@ -1616,7 +1732,7 @@ progress {
       cursor: pointer; }
   .form-control:focus {
     color: #212529;
-    background-color: #F2F2F2;
+    background-color: #fff;
     border-color: #86b7fe;
     outline: 0;
     box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25); }
@@ -1738,7 +1854,7 @@ textarea.form-control-lg {
   font-weight: 400;
   line-height: 1.5;
   color: #212529;
-  background-color: #F2F2F2;
+  background-color: #fff;
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e");
   background-repeat: no-repeat;
   background-position: right 0.75rem center;
@@ -1791,7 +1907,7 @@ textarea.form-control-lg {
   height: 1em;
   margin-top: 0.25em;
   vertical-align: top;
-  background-color: #F2F2F2;
+  background-color: #fff;
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -1866,9 +1982,9 @@ textarea.form-control-lg {
   .form-range:focus {
     outline: 0; }
     .form-range:focus::-webkit-slider-thumb {
-      box-shadow: 0 0 0 1px #F2F2F2, 0 0 0 0.25rem rgba(13, 110, 253, 0.25); }
+      box-shadow: 0 0 0 1px #fff, 0 0 0 0.25rem rgba(13, 110, 253, 0.25); }
     .form-range:focus::-moz-range-thumb {
-      box-shadow: 0 0 0 1px #F2F2F2, 0 0 0 0.25rem rgba(13, 110, 253, 0.25); }
+      box-shadow: 0 0 0 1px #fff, 0 0 0 0.25rem rgba(13, 110, 253, 0.25); }
   .form-range::-moz-focus-outer {
     border: 0; }
   .form-range::-webkit-slider-thumb {
@@ -2963,8 +3079,8 @@ textarea.form-control-lg {
   .nav-tabs .nav-link.active,
   .nav-tabs .nav-item.show .nav-link {
     color: #495057;
-    background-color: #F2F2F2;
-    border-color: #dee2e6 #dee2e6 #F2F2F2; }
+    background-color: #fff;
+    border-color: #dee2e6 #dee2e6 #fff; }
   .nav-tabs .dropdown-menu {
     margin-top: -1px;
     border-top-left-radius: 0;
@@ -3457,9 +3573,6 @@ textarea.form-control-lg {
   margin-bottom: -0.5rem;
   margin-left: -0.5rem;
   border-bottom: 0; }
-  .card-header-tabs .nav-link.active {
-    background-color: #fff;
-    border-bottom-color: #fff; }
 
 .card-header-pills {
   margin-right: -0.5rem;
@@ -3530,7 +3643,7 @@ textarea.form-control-lg {
   font-size: 1rem;
   color: #212529;
   text-align: left;
-  background-color: #F2F2F2;
+  background-color: #fff;
   border: 0;
   border-radius: 0;
   overflow-anchor: none;
@@ -3570,7 +3683,7 @@ textarea.form-control-lg {
   margin-bottom: 0; }
 
 .accordion-item {
-  background-color: #F2F2F2;
+  background-color: #fff;
   border: 1px solid rgba(0, 0, 0, 0.125); }
   .accordion-item:first-of-type {
     border-top-left-radius: 0.25rem;
