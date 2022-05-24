@@ -1,15 +1,6 @@
 {{ define "main" }}
-<div class="jumbotron">
-  <div class="container">
-    <h1 class="display-4">{{ .Site.Title}}</h1>
-    <p class="lead">{{ .Site.Params.Description }}</p>
-    {{ .Content }}
-  </div>
-</div>
 
 <div class="container-fluid">
-  <div class="row d-flex">
-    <div class="container mb-0 mb-md-6">
       <div class="features">
          <div class="col-md-4">
            <div class="text-wrapp">
@@ -48,7 +39,7 @@
               <a href="#" class="infra-btn">See Details</a>
             </div>
 
-            <div class="pricing-table">
+            <div class="pricing-table" id="apm-pricing">
               <h6 id="apm">APM</h6>
 
               <p class="start">Starting at</p>
@@ -96,7 +87,84 @@
             </div>
          </div>
       </div>
-   </div>
+  </div>
+
+   <div class="container-lg">
+      <div class="features-2">
+        <div class="container">
+          <div class="feature-apm">
+            <div class="text-wrapp">
+              <h6>APM</h6>
+              Get full visiibility into modern<br>
+              applications
+            </div>
+          </div>
+
+          <div class="feature-infra">
+            <div class="text-wrapp">
+              <h6>INFRASTRUCTURE</h6>
+              See across systems, apps, and<br>
+              services
+            </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="feature-logs">
+          <div class="text-wrapp">
+              <h6>LOGS MANAGEMENT</h6>
+              Analyze and explore log data in<br>
+              context
+          </div>
+        </div>
+
+        <div class="feature-observe">
+
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="text-wrapp-2">
+                    <h6>OBSERVABILITY</h6>
+                    <p>With turn-key integrations, Datadog<br>
+                      seamlessly aggregrates metrics and<br>
+                      events acress the full devops stack</p>
+
+                    <a href="#" class="read-btn">Read More</a>
+                  </div>
+        
+                  <img class="d-block w-100" style="width: 90% !important;" src="/images/home-observability.png" alt="First slide">
+                </div>
+
+                <div class="carousel-item">
+                  <div class="text-wrapp-2">
+                    <h6>OBSERVABILITY</h6>
+                    <p>With turn-key integrations, Datadog<br>
+                      seamlessly aggregrates metrics and<br>
+                      events acress the full devops stack</p>
+
+                    <a href="#" class="read-btn">Read More</a>
+                  </div>
+        
+                   
+                  <img class="d-block w-100" style="width: 90% !important;" src="/images/home-observability.png" alt="Second slide">
+                </div>
+
+              <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" id="next-arrow" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+    </div>
+
+    <div class="container">
+      <div class="customers">
+        <img class="cust-img" src="/images/customers.png">
+      </div>
+    </div>
+
   </div>
 </div>
 

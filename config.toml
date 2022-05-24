@@ -10,11 +10,31 @@ custom_js = ["js/custom.js"]
 
 [menu]
   [[menu.main]]
+    identifier = "product"
+    name = "Product"
+    url = "/product/"
+
+  [[menu.main]]
+    identifier = "docs"
+    name = "Docs"
+    url = "/docs/"
+
+  [[menu.main]]
+    identifier = "pricing"
+    name = "Pricing"
+    url = "/pricing/"
+
+  [[menu.main]]
+    identifier = "customers"
+    name = "Customers"
+    url = "/customers/"
+
+  [[menu.main]]
     identifier = "about"
     name = "About"
     url = "/about/"
 
   [[menu.main]]
-    identifier = "posts"
-    name = "Posts"
-    url = "/posts/"
+    identifier = "blog"
+    name = "Blog"
+    url = "/blog/"
