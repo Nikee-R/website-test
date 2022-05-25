@@ -42,13 +42,20 @@ h6 {
 
 /** Header **/
 
+.datadog-logo {
+  width: 96px;
+  height: 97px;
+  position: relative;
+  bottom: 2vw;
+}
+
 .sidebar {
   position: fixed;
-  width: 15%;
+  width: 13%;
   height: 100vh;
   background: #724EEF;
   font-size: 0.65em;
-  z-index: -1;
+  z-index: 1;
 }
 
 nav {
@@ -61,7 +68,7 @@ nav {
   position: relative;
   margin: 0 15%;
   text-align: left;
-  top: 40%;
+  top: 35%;
   transform: translateY(-50%);
   font-weight: bold;
 }
@@ -229,6 +236,10 @@ nav ul {
   text-decoration: none;
 }
 
+.read-btn:hover, .infra-btn:hover, .apm-btn:hover, .logs-btn:hover {
+  text-decoration: none;
+}
+
 .features .small {
   font-family: 'National', Helvetica ,Arial ,sans-serif;
   font-weight: 480;
@@ -302,6 +313,20 @@ $col_gap: 1rem;
     text-align: inherit;
 }
 
+#infra:hover  {
+  font-family: 'National', Helvetica ,Arial ,sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.342857px;
+  text-transform: uppercase;
+  color: #2B2AA7;
+  text-align: inherit;
+}
+
+
+
 #apm  {
   font-family: 'National', Helvetica ,Arial ,sans-serif;
   font-style: normal;
@@ -314,7 +339,31 @@ $col_gap: 1rem;
   text-align: inherit;
 }
 
+#apm:hover  {
+  font-family: 'National', Helvetica ,Arial ,sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.342857px;
+  text-transform: uppercase;
+  color: #14D071;
+  text-align: inherit;
+}
+
 #logs  {
+  font-family: 'National', Helvetica ,Arial ,sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.342857px;
+  text-transform: uppercase;
+  color: #FF635A;
+  text-align: inherit;
+}
+
+#logs:hover {
   font-family: 'National', Helvetica ,Arial ,sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -405,8 +454,8 @@ $col_gap: 1rem;
 .cust-img {
     position: relative;
     bottom: 18vw;
-    left: -19.2vw;
-    min-width: 598px;
+    left: -18.5vw;
+    min-width: 600px;
 }
 
 /** Footer Styling **/
@@ -419,6 +468,8 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
+  z-index: 3;
 }
 
 footer .container {
