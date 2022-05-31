@@ -159,6 +159,10 @@ nav ul {
   color: #FFF;
   width: 39vw;
   height: 19vw;
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    transform: scale(1.05);
+  }
 }
 
 .features-2 .text-wrapp-2 {

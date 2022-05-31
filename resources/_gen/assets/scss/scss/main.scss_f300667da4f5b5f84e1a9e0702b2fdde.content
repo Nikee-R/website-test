@@ -127,7 +127,10 @@ nav ul {
   text-align: center;
   color: #FFF;
   width: 39vw;
-  height: 19vw; }
+  height: 19vw;
+  transition: all 0.3s ease-in-out; }
+  .features-2 .text-wrapp:hover {
+    transform: scale(1.05); }
 
 .features-2 .text-wrapp-2 {
   min-width: 529px;
